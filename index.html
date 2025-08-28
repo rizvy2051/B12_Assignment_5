@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency Service</title>
+
+  <!-- DaisyUI + Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/153519294a.js" crossorigin="anonymous"></script>
+
+  <style>.hind-font{font-family:"Hind Madurai",sans-serif}</style>
+</head>
+<body class="max-w-[1920px] mx-auto">
+  <!-- Navigation Part Start -->
+  <header>
+    <nav class="flex flex-wrap gap-4 justify-between items-center w-11/12 mx-auto my-5">
+      <div class="flex items-center">
+        <img class="w-[44px] mr-3" src="images/logo.png" alt="">
+        <h1 class="hind-font text-xl sm:text-2xl font-extrabold text-green-800">Emergency <br class="hidden sm:block"> Service</h1>
+      </div>
+      <div class="flex gap-3">
+        <button class="btn rounded-3xl px-5 py-3 bg-green-100 hover:bg-green-600 hover:text-white text-base sm:text-xl">
+          <span id="heart-count">0</span> <i class="fa-solid fa-heart ml-1" style="color:#f50000;"></i>
+        </button>
+        <button class="btn rounded-3xl px-5 py-3 bg-green-100 hover:bg-green-600 hover:text-white text-base sm:text-xl">
+          <span id="coin-count">100</span><img class="w-6 ml-2" src="images/coin.png" alt="">
+        </button>
+        <button class="btn rounded-3xl px-5 py-3 bg-green-700 hover:bg-blue-600 text-white text-base sm:text-xl">
+          <span id="copy-count">0</span> Copy
+        </button>
+      </div>
+    </nav>
+    <!-- Navigation Part End -->
+    </header>
+
+ 
+<!-- Java Script Code Connection -->
+  <script src="script.js"></script>
+</body>
+</html>
