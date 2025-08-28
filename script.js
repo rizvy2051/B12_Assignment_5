@@ -43,3 +43,30 @@ document.querySelectorAll(".card").forEach(card => {
     addHistory(serviceName, serviceNumber);
   });
 });
+
+// History Side Js
+
+const historyList = document.getElementById("history-list");
+
+
+function addHistory(name, number){
+  const time = new Date().toLocaleTimeString();
+  const li = document.createElement("li");
+  li.className = "flex justify-between items-center bg-gray-100 rounded-lg px-4 py-3";
+  li.innerHTML = `
+    <div class="flex flex-col">
+      <span class="font-semibold">${name}</span>
+      <span class="text-sm text-gray-600">${number}</span>
+    </div>
+    <span class="text-sm text-gray-500">${time}</span>
+  `;
+  historyList.prepend(li);
+}
+
+const clearBtn    = document.getElementById("clear-history");
+
+clearBtn.addEventListener("click", () => {
+  historyList.innerHTML = "";
+  coins = 100; 
+  coinCountEl.textContent = coins;
+});
